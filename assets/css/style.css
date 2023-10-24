@@ -36,11 +36,12 @@ header {
 }
 
 .btn-icons {
-background-color: transparent;
+  background: rgba(116 84 84 / 24%);
 border: solid 2px;
-padding: 35px;
+padding: 25px;
 position: fixed;
 box-shadow: 0px 0px 1px 1px;
+border-radius: 10px;
 }
 .btn-icons:nth-of-type(1) {
 bottom: 5%;
@@ -56,23 +57,49 @@ bottom: 25%;
 }
 
 .fa-caret-square-up {
- font-size: 3em;
+ font-size: 2em;
   position: absolute;
 color: #df7473;
-inset: 25% 25%;
+inset: 25%;
   }
   .btn-icons .fa-calendar-alt {
-    font-size: 3em;
+    font-size: 2em;
   position: absolute;
 color:#4666b3;
-inset: 25% 25%;
-  }
+inset:  25% ;
+ }
   .fa-plus-square {
-    font-size: 3em;
+    font-size: 2em;
     position: absolute;
   color:#4666b3;
-  inset: 25% 25%;
+  inset:  25% ;
  }
+
+ @media screen and (min-width: 700px) {
+  .btn-icons {
+    background: rgba(116 84 84 / 24%);
+  border: solid 2px;
+  padding: 25px;
+  position: fixed;
+  box-shadow: 0px 0px 1px 1px;
+  border-radius: 10px;
+  }
+  .btn-icons:nth-of-type(1) {
+  top: 5%;
+    right: 1%;
+    bottom: 95%;
+  }
+  .btn-icons:nth-of-type(2) {
+    top: 15%;
+    right: 1%;
+    bottom: 85%;
+  }
+  .btn-icons:nth-of-type(3) {
+    top: 25%;
+    right: 1%;
+    bottom: 75%;
+  }
+}
 
 @media screen and (min-width: 800px) {
   header {
@@ -365,6 +392,16 @@ button {
 }
 
 /* ELEMENTI NELL' ASIDE */
+aside div {
+  position: relative;
+}
+aside div p .fa-tag {
+  position: absolute;
+  top: 5%;
+  right: 1%;
+  font-size: 2.5em;
+  opacity: 0.3;
+}
 aside h2 {
   text-align: center;
   color: #333;
